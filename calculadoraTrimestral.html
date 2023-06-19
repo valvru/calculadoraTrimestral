@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Honorario</title>
+
+    <style>
+
+    </style>
+
+</head>
+<body>
+    <h1>Calcular Honorario Trimestral</h1>
+
+        <div class="duracion">
+            <p>Duración</p>
+            <label class="12meses">
+                <input type="radio" name="checkbox_1" id="checkbox12"><!-- Al tener el mismo "name" hace que los inputs se selecdcionen uno solo a la vez -->
+                12
+            </label>   
+            <label class="24meses">
+                <input type="radio" name="checkbox_1" id="checkbox24">
+                24
+            </label> 
+            <label class="36meses">
+                <input type="radio" name="checkbox_1" id="checkbox36">
+                36
+            </label>
+        </div>
+
+        <div class="valores">
+
+            <p>Valores de alquiler</p>
+
+            <div class="valores12">
+                <input type="text" class="trimestres1">
+                <input type="text" class="trimestres2">
+                <input type="text" class="trimestres3">
+                <input type="text" class="trimestres4">
+            </div>
+            
+            <div class="valores24">
+                <input type="text" class="trimestres5">
+                <input type="text" class="trimestres6">
+                <input type="text" class="trimestres7">
+                <input type="text" class="trimestres8">
+            </div>
+
+            <div class="valores36">
+                <input type="text" class="trimestres9">
+                <input type="text" class="trimestres10">
+                <input type="text" class="trimestres11">
+                <input type="text" class="trimestres12">
+            </div>
+
+            <p>Expensas</p>
+
+            <input type="text" class="expensas">                        
+        </div>
+
+        <button id="calcular">Calcular</button>
+
+        <p class="result"></p>
+
+</body>
+
+<script src="./scriptCalculadora.js"></script>
+
+</html>
