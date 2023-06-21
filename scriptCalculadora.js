@@ -69,11 +69,11 @@ function input36checked() {
 function calcular() {
 
     if(checkbox36.checked == true) {
-        primerCalculo = parseInt(trimestre1.value)+parseInt(trimestre2.value)+parseInt(trimestre3.value)+parseInt(trimestre4.value)+parseInt(trimestre5.value)+parseInt(trimestre6.value)+parseInt(trimestre7.value)+parseInt(trimestre8.value)+parseInt(trimestre9.value)+parseInt(trimestre10.value)+parseInt(trimestre11.value)+parseInt(trimestre12.value)+parseInt(expensas.value)
+        primerCalculo = parseInt(trimestre1.value)+parseInt(trimestre2.value)+parseInt(trimestre3.value)+parseInt(trimestre4.value)+parseInt(trimestre5.value)+parseInt(trimestre6.value)+parseInt(trimestre7.value)+parseInt(trimestre8.value)+parseInt(trimestre9.value)+parseInt(trimestre10.value)+parseInt(trimestre11.value)+parseInt(trimestre12.value)+parseInt((expensas.value)*36)
     } else if(checkbox24.checked == true) {
-        primerCalculo = parseInt(trimestre1.value)+parseInt(trimestre2.value)+parseInt(trimestre3.value)+parseInt       (trimestre4.value)+parseInt(trimestre5.value)+parseInt(trimestre6.value)+parseInt(trimestre7.value)+parseInt(trimestre8.value)+parseInt(expensas.value)
+        primerCalculo = parseInt(trimestre1.value)+parseInt(trimestre2.value)+parseInt(trimestre3.value)+parseInt       (trimestre4.value)+parseInt(trimestre5.value)+parseInt(trimestre6.value)+parseInt(trimestre7.value)+parseInt(trimestre8.value)+parseInt((expensas.value)*24)
     } else if (checkbox12.checked == true) {
-        primerCalculo = parseInt(trimestre1.value)+parseInt(trimestre2.value)+parseInt(trimestre3.value)+parseInt(trimestre4.value)+parseInt(expensas.value)
+        primerCalculo = parseInt(trimestre1.value)+parseInt(trimestre2.value)+parseInt(trimestre3.value)+parseInt(trimestre4.value)+parseInt((expensas.value)*12)
     };    
 
     let resultado = parseInt((primerCalculo*3)*0.06);
