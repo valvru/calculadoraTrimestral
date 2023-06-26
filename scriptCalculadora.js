@@ -83,7 +83,7 @@ function calcular() {
 
         primerCalculo = parseInt(trimestre1.value)+parseInt(trimestre2.value)+parseInt(trimestre3.value)+parseInt(trimestre4.value);
 
-    };    
+    };
 
     let resultado = parseInt(((primerCalculo*3) + valorExpensas)*0.06);
 
@@ -95,5 +95,3 @@ document.addEventListener("keyup", function(event) {  //esto hace que al presion
         calcular();
     }
     });
-
-    console.log(valorExpensas);
